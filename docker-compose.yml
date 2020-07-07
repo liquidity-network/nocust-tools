@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  explorer:
+    container_name: explorer
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3030:80'
